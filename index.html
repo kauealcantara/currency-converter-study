@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>DevClub Internacional - Casa de Câmbio</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/logoicon.ico">
+</head>
+
+<body>
+
+    <div class="bg-overlay-body">
+        <!-- ::inicio:: LOGO -->
+
+        <header>
+            <img class="currency-exchange-logo" src="./assets/img/logo-casa-da-moeda.png"
+                alt="logo-devclub-internacional-casa-de-câmbio">
+        </header>
+
+        <!-- ::fim:: LOGO -->
+
+        <div id="horizontal-line">
+        </div>
+
+        <!-- ::inicio:: NAVEGAÇÃO -->
+
+
+
+        <nav class="nav-site">
+            <a class="link-nav">Simule</a>
+            <a class="line-nav">|</a>
+            <a class="link-nav">Loja</a>
+            <a class="line-nav">|</a>
+            <a class="link-nav">API de Moedas</a>
+            <a class="line-nav">|</a>
+            <a class="link-nav">Contatos</a>
+
+
+            <button class="enter-button">Entrar</button>
+            <button class="create-button">Criar Conta</button>
+        </nav>
+
+        <!-- ::fim:: NAVEGAÇÃO -->
+
+        <!-- ::inicio:: PRINCIPAL -->
+
+        <main>
+
+            <!--Inicio BOX LEFT - TEXTOS-->
+
+            <div class="box-left">
+
+                <div class="txt-box-left">
+                    <h1>DEV CLUB - <span id="txt-internacional">INTERNACIONAL</span>
+                        <br> CASA DE CÂMBIO
+                    </h1>
+                    <br>
+                    <div id="horizontal-line">
+                    </div>
+                    <br>
+
+                    <p class="p-box-left">Na <b>DevClub Internacional</b>, oferecemos uma ampla seleção de moedas
+                        estrangeiras, incluindo dólar, euro, libra e mais de 20 outras opções, disponíveis para compra
+                        em espécie e com a conveniência de parcelamento em até 10 vezes no cartão de crédito.
+                        <br>
+                        <br>
+
+                        Para verificar a disponibilidade do serviço de entrega em sua região, <a
+                            class="p-click-here">clique aqui</a>
+                        <br>
+                        <br>
+
+                    </p>
+                </div>
+
+                <div class="call-box-left">
+                    <p><b>Interessado em vender moeda estrangeira?</b> Acesse nossa <a class="link-acesse-loja">Loja
+                            Online</a> e faça uma simulação ou
+                        localize a loja mais próxima para obter assistência.</p>
+                </div>
+            </div>
+
+            <!--FIM BOX LEFT - TEXTOS-->
+
+
+            <!--Inicio BOX RIGHT - CONVERSOR -->
+            <div class="box-right">
+                <article class="article-to-convert">
+
+                    <section class="section-inputs">
+
+                        <div>
+                            <label class="label-convert-from">
+                                <p>Converter <b>de:</b></p>
+                                <select class="select-convert-from">
+                                    <option id="select-from" value="select-from">Selecione...</option>
+                                    <option id="real-from" value="real-from">R$ Real Brasileiro</option>
+                                    <option id="dolar-from" value="dolar-from">US$ Dólar Americano</option>
+                                    <option id="euro-from" value="euro-from">€ Euro</option>
+                                    <option id="libra-from" value="libra-from">£ Libra</option>
+                                    <option id="iene-from" value="iene-from">¥ Iene</option>
+                                    <option id="bitcoin-from" value="bitcoin-from">₿ Bitcoin</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div>
+
+                            <label class="label-convert-to">
+                                Converter <b>para:</b>
+                                <select class="select-convert-to">
+                                    <option id="select-to" value="select-to">Selecione...</option>
+                                    <option id="real-to" value="real-to">R$ Real Brasileiro</option>
+                                    <option id="dolar-to" value="dolar-to">US$ Dólar Americano</option>
+                                    <option id="euro-to" value="euro-to">€ Euro</option>
+                                    <option id="libra-to" value="libra-to">£ Libra</option>
+                                    <option id="iene-to" value="iene-to">¥ Iene</option>
+                                    <option id="bitcoin-to" value="bitcoin-to">₿ Bitcoin</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <label class="label-value-to-convert">
+                            valor:
+                            <input class="input-value-to-convert" placeholder="10.000,00">
+                        </label>
+
+
+
+                        <button class="button-to-convert">Converter</button>
+
+
+                    </section>
+
+
+                    <section class="section-conversion">
+
+                        <div class="currency-box-left">
+                            <img id="img-saturate" class="currency-img-from" src="./assets/img/moeda.png"
+                                alt="logo-moeda-a-converter">
+                            <p class="currency" id="name-to-convert">Moeda</p>
+                            <p class="currency-value-to-convert">0,00</p>
+                        </div>
+
+                        <div class="arrow-img">
+
+                            <img class="arrow-img" src="./assets/img/seta-logo-devclub.png">
+                        </div>
+
+                        <div class="currency-box-right">
+                            <img id="img-saturate" class="currency-img-for" src="./assets/img/moeda.png"
+                                alt="logo-moeda-a-convertida">
+                            <p class="currency" id="name-converted-currency">Moeda</p>
+                            <p class="converted-result">0.00</p>
+                        </div>
+
+
+
+                    </section>
+                </article>
+            </div>
+            <!-- Fim BOX RIGHT - CONVERSOR -->
+
+        </main>
+
+        <!-- ::fim:: PRINCIPAL -->
+
+        <!-- inicio Footer -->
+
+        <footer>
+
+            <div class="footer-left">
+                
+                <h2>Tecnologias utilizadas:</h2>
+                
+                <section class="logo-technologies">
+
+                    <img class="img-logo-technologies" src="./assets/img/html5.png" alt="logo-html5">
+
+                    <img class="img-logo-technologies" src="./assets/img/css3.png" alt="logo-CSS3">
+                    <img class="img-logo-technologies" src="./assets/img/JS.png" alt="logo-JavaScript">
+
+
+                </section>
+            </div>
+
+            <div class="footer-mid">
+
+
+
+                <section class="icon-midias">
+
+                    <img class="img-icon" src="./assets/img/github.png" alt="icon-git-hub">
+                    <img class="img-icon" src="./assets/img/in.png" alt="icon-Linkedin">
+                    <img class="img-icon" src="./assets/img/twitter.png" alt="icon-twitter">
+                    <img class="img-icon" src="./assets/img/insta.png" alt="icon-git-hub">
+                    <img class="img-icon" src="./assets/img/email.png" alt="icon-email">
+
+
+
+                </section>
+
+            </div>
+
+            <div class="footer-righ">
+                <nav class="nav-footer-nav">
+                    <a class="footer-nav">:: Github/kauealcantara</a>
+
+                    <a class="footer-nav">:: Linkedin/kauealcantara</a>
+
+                    <a class="footer-nav">:: Twitter/kauealcantara</a>
+
+                    <a class="footer-nav">:: Instagram/kauealcantara</a>
+
+                    <a class="footer-nav">:: kauealcantara@gmail</a>
+
+                </nav>
+            </div>
+        </footer>
+
+        <!-- fim Footer -->
+    </div>
+</body>
+
+<!-- INICIO JAVASCRIPT -->
+
+<script src="./scripts.js"></script>
+
+</html>
